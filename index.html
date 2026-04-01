@@ -41,7 +41,6 @@
             .left-panel { position: sticky; top: 20px; }
         }
 
-        /* Header */
         .header {
             text-align: center;
             margin-bottom: 28px;
@@ -60,7 +59,6 @@
             margin-top: 6px;
         }
 
-        /* Selected cards */
         .selected-cards {
             background: white;
             border-radius: 24px;
@@ -135,31 +133,13 @@
             padding: 8px 0;
         }
 
-        /* Ad blocks */
-        .ad-container {
-            background: #ffffff;
-            border: 1px solid #e9e9ef;
-            border-radius: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
+        /* A-Ads блок */
+        .ad-top {
             margin: 20px 0;
-            position: relative;
+            display: flex;
+            justify-content: center;
         }
-        .ad-container::before {
-            content: "Реклама";
-            position: absolute;
-            top: 8px;
-            left: 14px;
-            font-size: 9px;
-            color: #aeaeb2;
-            font-weight: 500;
-        }
-        .ad-horizontal { padding: 14px; min-height: 70px; }
-        .ad-placeholder-text { font-size: 11px; color: #c6c6c8; }
 
-        /* Filters */
         .filters {
             display: flex;
             gap: 8px;
@@ -200,7 +180,6 @@
         }
         .search-input:focus { border-color: #007aff; }
 
-        /* Cards grid */
         .cards-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -282,7 +261,6 @@
             box-shadow: 0 1px 2px rgba(0,0,0,0.1);
         }
 
-        /* Decks section */
         .decks-section {
             margin-top: 8px;
         }
@@ -346,7 +324,6 @@
             border: 1px solid #e9e9ef;
         }
 
-        /* Rarity borders */
         .rarity-common { border-bottom: 3px solid #8e8e93; }
         .rarity-rare { border-bottom: 3px solid #ff9f0a; }
         .rarity-epic { border-bottom: 3px solid #af52de; }
@@ -396,8 +373,12 @@
         <div class="selected-list" id="selectedList"></div>
     </div>
 
-    <div class="ad-container ad-horizontal">
-        <div class="ad-placeholder-text">Рекламное место — A-Ads (320x50)</div>
+    <!-- A-Ads блок -->
+    <div class="ad-top">
+        <div id="frame" style="width: 320px;margin: auto;z-index: 99998;height: auto">
+            <iframe data-aa='2432569' src='//ad.a-ads.com/2432569/?size=320x50'
+                style='border:0; padding:0; width:320px; height:50px; overflow:hidden;display: block;margin: auto'></iframe>
+        </div>
     </div>
 
     <div class="two-columns">
@@ -424,7 +405,7 @@
         </div>
     </div>
 
-    <div class="ad-container ad-horizontal" style="margin-top: 24px;">
+    <div class="ad-container ad-horizontal" style="margin-top: 24px; display: none;">
         <div class="ad-placeholder-text">Рекламное место — A-Ads (Футер)</div>
     </div>
 </div>
