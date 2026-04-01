@@ -355,6 +355,19 @@
         .scrollbar-hide::-webkit-scrollbar-track { background: #e9e9ef; border-radius: 10px; }
         .scrollbar-hide::-webkit-scrollbar-thumb { background: #c6c6c8; border-radius: 10px; }
     </style>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function(m,e,t,r,i,k,a){
+            m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();
+            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+        })(window, document,'script','https://mc.yandex.ru/metrika/tag.js', 'ym');
+
+        ym(108348740, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/108348740" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
 </head>
 <body>
 <div class="container">
@@ -403,10 +416,6 @@
                 <div class="decks-grid scrollbar-hide" id="decksGrid"></div>
             </div>
         </div>
-    </div>
-
-    <div class="ad-container ad-horizontal" style="margin-top: 24px; display: none;">
-        <div class="ad-placeholder-text">Рекламное место — A-Ads (Футер)</div>
     </div>
 </div>
 
@@ -503,7 +512,6 @@ const cardsData = [
     { id: "golden-knight", name: "Золотой рыцарь", elixir: 3, rarity: "champion", hasEvo: false }
 ];
 
-// ========= МЕТОВЫЕ КОЛОДЫ =========
 const metaDecks = [
     { name: "Mega Knight Evo Cycle", winrate: "68.4%", cards: ["mega-knight", "skeletons", "zap", "firecracker", "valkyrie", "hog-rider", "cannon", "fireball"] },
     { name: "Hog EQ Evolution", winrate: "65.1%", cards: ["hog-rider", "fireball", "firecracker", "skeletons", "ice-spirit", "cannon", "the-log", "musketeer"] },
